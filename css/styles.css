@@ -28,6 +28,10 @@ button {
   cursor: pointer;
 }
 
+img {
+  display: block;
+}
+
 .container {
   width: 100%;
   max-width: 1158px;
@@ -119,7 +123,7 @@ button {
 
 /*Main*/
 
-.hero {
+.section-one {
   background-color: #2e2f42;
   padding-top: 188px;
   padding-bottom: 188px;
@@ -173,14 +177,15 @@ button {
 .advantages {
 }
 
-.h2-advantages {
-  text-align: center;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  visibility: hidden;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 .advantages-list {
   display: flex;
