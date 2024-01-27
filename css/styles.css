@@ -4,14 +4,56 @@ body {
   background-color: #fff;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 ul {
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 a {
   text-decoration: none;
 }
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  max-width: 1158px;
+  /*padding-left: 15px;
+  padding-right: 15px;*/
+  margin: 0 auto;
+  border: chartreuse solid;
+}
 
 /* header */
+
+.headdf {
+  display: flex;
+  border-bottom: 1px solid #e7e9fc;
+  background: #fff;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.navigaton {
+  display: flex;
+}
 
 .logo {
   font-family: Raleway, sans-serif;
@@ -31,10 +73,15 @@ a {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  display: flex;
+  gap: 40px;
+  margin-left: 76px;
 }
 
 .link {
   color: #2e2f42;
+  padding: 24px 0;
+  display: block;
 }
 
 .link:hover,
@@ -50,6 +97,14 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  display: flex;
+  margin-left: auto;
+}
+
+.address-list {
+  display: flex;
+
+  gap: 40px;
 }
 
 .link-addres {
@@ -65,7 +120,7 @@ a {
 
 /*Main*/
 
-.section-one {
+.hero {
   background-color: #2e2f42;
 }
 
@@ -75,7 +130,12 @@ a {
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
-  letter-spacing: 1.12px;
+  letter-spacing: 0.02em;
+  max-width: 496px;
+  padding-bottom: 48px;
+  padding-top: 188px;
+  margin-left: 301px;
+  margin-right: 301px;
 }
 .button {
   font-family: "Roboto", sans-serif;
@@ -86,6 +146,13 @@ a {
   letter-spacing: 0.04em;
   background-color: #4d5ae5;
   cursor: pointer;
+  padding: 16px 32px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  margin-left: 465px;
+  margin-right: 465px;
+  margin-bottom: 188px;
+  /*min-width: 169px;*/
 }
 
 .button:hover,
@@ -96,6 +163,11 @@ a {
 
 /*our advantages-section two */
 
+.advantages {
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+
 .h2-advantages {
   text-align: center;
   font-size: 36px;
@@ -103,6 +175,15 @@ a {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  display: none;
+}
+.advantages-list {
+  display: flex;
+  gap: 24px;
+}
+
+.advantages-list-item {
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 .part-advantages {
@@ -111,6 +192,7 @@ a {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .description-part {
@@ -131,10 +213,19 @@ a {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin: 0 auto;
+  margin-bottom: 72px;
 }
 
-.section-three {
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
+.three {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .name-team {
@@ -144,6 +235,8 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
+  margin-top: 32px;
 }
 
 .position-team {
@@ -153,6 +246,7 @@ a {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-bottom: 32px;
 }
 
 .li-team {
@@ -160,6 +254,19 @@ a {
 }
 
 /*portfolio-section four*/
+
+.portfolio {
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+  flex-basis: calc((100% - 18) / 3);
+}
 
 .title-portfolio {
   text-align: center;
@@ -169,6 +276,7 @@ a {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
 .item-portfolio {
@@ -177,6 +285,8 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 
 .description-item {
@@ -185,10 +295,16 @@ a {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-bottom: 32px;
 }
 
 /*footer*/
 .footer {
+}
+
+.footer-space {
+  padding-top: 102px;
+  padding-bottom: 100px;
   background-color: #2e2f42;
 }
 
@@ -198,10 +314,13 @@ a {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  max-width: 264px;
+  padding-top: 18px;
 }
 
 .studio-footer {
   color: #f4f4fd;
+  margin-bottom: 18px;
 }
 .logo-footer {
   font-family: Raleway, sans-serif;
