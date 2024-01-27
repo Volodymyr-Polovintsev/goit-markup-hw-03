@@ -31,28 +31,27 @@ button {
 .container {
   width: 100%;
   max-width: 1158px;
-  /*padding-left: 15px;
-  padding-right: 15px;*/
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
-  border: chartreuse solid;
 }
 
 /* header */
 
-.headdf {
-  display: flex;
+.header {
   border-bottom: 1px solid #e7e9fc;
-  background: #fff;
-  align-items: center;
 }
 
-nav {
+.headdf {
   display: flex;
+
+  background: #fff;
   align-items: center;
 }
 
 .navigaton {
   display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -63,6 +62,7 @@ nav {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 .studio {
   color: #2e2f42;
@@ -75,7 +75,6 @@ nav {
   letter-spacing: 0.02em;
   display: flex;
   gap: 40px;
-  margin-left: 76px;
 }
 
 .link {
@@ -122,6 +121,8 @@ nav {
 
 .hero {
   background-color: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .main-heading {
@@ -133,7 +134,7 @@ nav {
   letter-spacing: 0.02em;
   max-width: 496px;
   padding-bottom: 48px;
-  padding-top: 188px;
+
   margin-left: 301px;
   margin-right: 301px;
 }
@@ -151,8 +152,10 @@ nav {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   margin-left: 465px;
   margin-right: 465px;
-  margin-bottom: 188px;
-  /*min-width: 169px;*/
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
 }
 
 .button:hover,
@@ -163,9 +166,11 @@ nav {
 
 /*our advantages-section two */
 
-.advantages {
+.section-advantages {
   padding-bottom: 120px;
   padding-top: 120px;
+}
+.advantages {
 }
 
 .h2-advantages {
@@ -175,7 +180,7 @@ nav {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  display: none;
+  visibility: hidden;
 }
 .advantages-list {
   display: flex;
@@ -205,6 +210,12 @@ nav {
 
 /*our team*/
 
+.section-three {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #f4f4fd;
+}
+
 .title-team {
   text-align: center;
   font-size: 36px;
@@ -223,9 +234,6 @@ nav {
 }
 
 .three {
-  background-color: #f4f4fd;
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 .name-team {
@@ -236,7 +244,6 @@ nav {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
-  margin-top: 32px;
 }
 
 .position-team {
@@ -246,11 +253,17 @@ nav {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-bottom: 32px;
 }
 
 .li-team {
   background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  background: var(--WHITE, #fff);
+  box-shadow: 0px 2px 1px 0px;
+  flex-basis: calc((100% - 72px) / 4);
+}
+.team {
+  padding: 32px 0;
 }
 
 /*portfolio-section four*/
@@ -265,7 +278,16 @@ nav {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
-  flex-basis: calc((100% - 18) / 3);
+}
+.portfolio-list-item {
+  flex-basis: calc((100% - 48) / 3);
+}
+
+.app-portfolio {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  background: #fff;
+  border-top: none;
 }
 
 .title-portfolio {
@@ -285,7 +307,6 @@ nav {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-top: 32px;
   margin-bottom: 8px;
 }
 
@@ -295,17 +316,16 @@ nav {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-bottom: 32px;
 }
 
 /*footer*/
 .footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #2e2f42;
 }
 
 .footer-space {
-  padding-top: 102px;
-  padding-bottom: 100px;
-  background-color: #2e2f42;
 }
 
 .description-footer {
@@ -315,14 +335,14 @@ nav {
   line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 264px;
-  padding-top: 18px;
 }
 
 .studio-footer {
   color: #f4f4fd;
-  margin-bottom: 18px;
 }
+
 .logo-footer {
+  display: inline-block;
   font-family: Raleway, sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -330,4 +350,5 @@ nav {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-bottom: 16px;
 }
